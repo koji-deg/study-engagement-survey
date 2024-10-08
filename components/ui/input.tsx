@@ -1,8 +1,8 @@
-import * as React from "react";
+ï»¿import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-// InputProps ƒCƒ“ƒ^[ƒtƒF[ƒX‚Ííœ‚µ‚Ü‚·
+// InputProps ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã¯å‰Šé™¤ã—ã¾ã™
 const Input = React.forwardRef<HTMLInputElement, React.InputHTMLAttributes<HTMLInputElement>>(
   ({ className, type, ...props }, ref) => {
     return (
