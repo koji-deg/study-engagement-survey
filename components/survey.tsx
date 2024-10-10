@@ -46,7 +46,8 @@ export function Survey() {
   const [currentQuestion, setCurrentQuestion] = useState(-1)
   const [answers, setAnswers] = useState(Array(questions.length).fill(null))
   const [showResults, setShowResults] = useState(false)
-  const [allResults, setAllResults] = useState([])
+  // 型を明示的に指定する
+  const [allResults, setAllResults] = useState<{ id: number; results: { name: string; score: number; }[] }[]>([])
   const [fadeIn, setFadeIn] = useState(false)
 
   const fadeAnimation = useSpring({
