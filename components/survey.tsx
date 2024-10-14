@@ -227,7 +227,7 @@ const TimeSeriesChart = ({ data, isFuture }) => {
         />
             <Tooltip
   formatter={(value, name) => {
-    const roundedValue = Math.floor(value * 2) / 2;
+    const roundedValue = Math.floor({value} * 2) / 2;
     return [roundedValue, name];
   }}
 />
